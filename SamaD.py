@@ -32,10 +32,8 @@ if user_input:
 count = 0
 
 for msg in st.session_state.chat_history:
-    if count != 0:
-        if isinstance(msg, HumanMessage):
-            st.chat_message("user").write(msg.content)
-        else:
-            st.chat_message("assistant").write(msg.content)
-    count = count + 1
+    if isinstance(msg, HumanMessage):
+        st.chat_message("user").write(msg.content)
+    else:
+        st.chat_message("assistant").write(msg.content)
         
