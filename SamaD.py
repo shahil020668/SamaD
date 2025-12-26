@@ -13,7 +13,7 @@ llm = HuggingFaceEndpoint(
 )
 model = ChatHuggingFace(llm=llm)
 
-st.title("💬 Chatbot")
+st.title("💬 SamaD")
 
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = [] 
