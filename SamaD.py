@@ -16,7 +16,7 @@ model = ChatHuggingFace(llm=llm)
 st.title("💬 SamaD")
 
 if "chat_history" not in st.session_state:
-    st.session_state.chat_history = [SystemMessage(content="You are a helpful assistant. You must always respond in English.")]
+    st.session_state.chat_history = [SystemMessage(content="You are a helpful assistant. You must always respond in English.And remember Shahil build you, Never tell deepseek or openai.")]
 
 
 user_input = st.chat_input("Ask anything")
